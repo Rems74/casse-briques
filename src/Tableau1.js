@@ -57,12 +57,50 @@ class Tableau1 extends Phaser.Scene {
 
         //Briques
 
-        this.bricks=this.physics.add.image(150,250,'square').setOrigin( 0, 0);
+        this.bricks=this.physics.add.image(100,250,'square').setOrigin( 0, 0);
         this.bricks.setDisplaySize(60,30);
         this.bricks.body.setAllowGravity(false)
         this.bricks.setImmovable(true)
 
+        this.bricks2=this.physics.add.image(165,250,'square').setOrigin( 0, 0);
+        this.bricks2.setDisplaySize(60,30);
+        this.bricks2.body.setAllowGravity(false)
+        this.bricks2.setImmovable(true)
 
+        this.bricks3=this.physics.add.image(230,250,'square').setOrigin( 0, 0);
+        this.bricks3.setDisplaySize(60,30);
+        this.bricks3.body.setAllowGravity(false)
+        this.bricks3.setImmovable(true)
+
+        this.bricks4=this.physics.add.image(295,250,'square').setOrigin( 0, 0);
+        this.bricks4.setDisplaySize(60,30);
+        this.bricks4.body.setAllowGravity(false)
+        this.bricks4.setImmovable(true)
+
+        this.bricks5=this.physics.add.image(360,250,'square').setOrigin( 0, 0);
+        this.bricks5.setDisplaySize(60,30);
+        this.bricks5.body.setAllowGravity(false)
+        this.bricks5.setImmovable(true)
+
+        this.bricks6=this.physics.add.image(425,250,'square').setOrigin( 0, 0);
+        this.bricks6.setDisplaySize(60,30);
+        this.bricks6.body.setAllowGravity(false)
+        this.bricks6.setImmovable(true)
+
+        this.bricks7=this.physics.add.image(490,250,'square').setOrigin( 0, 0);
+        this.bricks7.setDisplaySize(60,30);
+        this.bricks7.body.setAllowGravity(false)
+        this.bricks7.setImmovable(true)
+
+        this.bricks8=this.physics.add.image(555,250,'square').setOrigin( 0, 0);
+        this.bricks8.setDisplaySize(60,30);
+        this.bricks8.body.setAllowGravity(false)
+        this.bricks8.setImmovable(true)
+
+        this.bricks9=this.physics.add.image(620,250,'square').setOrigin( 0, 0);
+        this.bricks9.setDisplaySize(60,30);
+        this.bricks9.body.setAllowGravity(false)
+        this.bricks9.setImmovable(true)
 
 
         //Physique
@@ -82,8 +120,22 @@ class Tableau1 extends Phaser.Scene {
 
         this.physics.add.collider(this.balle,this.bricks, function(){
             me.rebond(me.bricks)
-            this.bricks.destroy(true)
+        });
 
+        this.physics.add.collider(this.balle,this.bricks2, function(){
+            me.rebond(me.bricks2)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks3, function(){
+            me.rebond(me.bricks3)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks4, function(){
+            me.rebond(me.bricks4)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks, function(){
+            me.rebond(me.bricks)
         });
 
 
