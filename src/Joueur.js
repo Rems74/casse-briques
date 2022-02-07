@@ -14,8 +14,8 @@ class Joueur {
         this.name = name;
         this.scoreId = scoreId;
         this.$el = document.getElementById(scoreId);
-        this.$score = this.$el.querySelector(".score");
-        this.$name = this.$el.querySelector(".name");
-        this.$name.textContent = name
+
+
+
     }
 }
