@@ -134,8 +134,24 @@ class Tableau1 extends Phaser.Scene {
             me.rebond(me.bricks4)
         });
 
-        this.physics.add.collider(this.balle,this.bricks, function(){
-            me.rebond(me.bricks)
+        this.physics.add.collider(this.balle,this.bricks5, function(){
+            me.rebond(me.bricks5)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks6, function(){
+            me.rebond(me.bricks6)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks7, function(){
+            me.rebond(me.bricks7)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks8, function(){
+            me.rebond(me.bricks8)
+        });
+
+        this.physics.add.collider(this.balle,this.bricks9, function(){
+            me.rebond(me.bricks9)
         });
 
 
